@@ -69,7 +69,7 @@ const ChefCards = () => {
         // nextSlideElement.classList.add('next-slide-anim');
         prevSlideElement.style.transform = "revert"
         prevSlideElement.style.transition = "all 500ms" 
-        nextSlideElement.style.transform = "scale(1.1)"
+        nextSlideElement.style.transform = "scale(1.1) translateY(3.5%)"
         nextSlideElement.style.transition = "all 500ms" 
         nextSlideElement.style.zIndex  = "9999"
       //   w.style.transform = "scale(1.3)";
