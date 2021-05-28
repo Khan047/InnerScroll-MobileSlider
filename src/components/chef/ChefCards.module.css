@@ -357,7 +357,10 @@ figure {
 .cuisine-slider{
 	display: flex;
 	overflow: scroll;
-}
+}	
+.cuisine-slider::-webkit-scrollbar {
+	display: none!important;
+  }
 .dish-img-span {
 	width: 58px;
 	height: 58px;
@@ -483,6 +486,9 @@ figcaption {
 	display: flex;
 	overflow: scroll;
 }
+.org-scroller::-webkit-scrollbar {
+	display: none!important;
+  }
 .slide-button{
 	outline: 0;
 	border: none;
@@ -499,37 +505,6 @@ figcaption {
 }
 
 
-/* animations */
-.next-slide-anim {
-	-webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-@-webkit-keyframes scale-up-ver-top {
-	0% {
-	  -webkit-transform: scaleY(0.4);
-			  transform: scaleY(0.4);
-	  -webkit-transform-origin: 100% 0%;
-			  transform-origin: 100% 0%;
-	}
-	100% {
-	  -webkit-transform: scaleY(1);
-			  transform: scaleY(1);
-	  -webkit-transform-origin: 100% 0%;
-			  transform-origin: 100% 0%;
-	}
+.scrollhider::-webkit-scrollbar {
+	display: none!important;
   }
-  @keyframes scale-up-ver-top {
-	0% {
-	  -webkit-transform: scaleY(0.4);
-			  transform: scaleY(0.4);
-	  -webkit-transform-origin: 100% 0%;
-			  transform-origin: 100% 0%;
-	}
-	100% {
-	  -webkit-transform: scaleY(1);
-			  transform: scaleY(1);
-	  -webkit-transform-origin: 100% 0%;
-			  transform-origin: 100% 0%;
-	}
-  }
-  

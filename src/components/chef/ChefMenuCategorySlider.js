@@ -4,7 +4,7 @@ import MenuCategoryStory from "./MenuCategoryStory";
 
 const ChefMenuCategorySlider = () => {
   return (
-    <div className={`${styles["row"]} ${styles["cuisine"]}`}>
+    <div className={`${styles["row"]} ${styles["cuisine"]} scrollhider`}>
       <div className={styles["col-12"]}>
         <h4 className={styles["card-title"]}>Cuisine Speciality</h4>
       </div>
