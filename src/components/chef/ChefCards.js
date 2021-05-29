@@ -14,7 +14,7 @@ const ChefCards = () => {
     onSwipedRight: () => slideRef.current.slickPrev(),
     preventDefaultTouchmoveEvent: false,
     trackMouse: true,
-    delta: 280,  
+    delta: 190,   //control swipe length
   });
 
   const slideRef = useRef();
@@ -26,7 +26,7 @@ const ChefCards = () => {
     centerPadding: '20px',
     slidesToShow: 1,
     slidesToScroll: 1, 
-    autoplay: false,
+    autoplay: true,
     speed: 1000,
     mobileFirst: true,
     pauseOnHover: true,
@@ -42,10 +42,10 @@ const ChefCards = () => {
       const prevSlideElement = slideRef.current.innerSlider.list.querySelector(`[data-index="${prev}"]`);
       const nextSlideElement = slideRef.current.innerSlider.list.querySelector(`[data-index="${next}"]`);
       setTimeout(() => {
-        prevSlideElement.style.transform = "revert"
-        prevSlideElement.style.transition = "all 500ms" 
-        nextSlideElement.style.transform = "scale(1.1) translateY(3.8%)"
-        nextSlideElement.style.transition = "all 500ms"         
+        prevSlideElement.style.transform = "scale(0.85)"
+        prevSlideElement.style.transition = "all 500ms ease-in-out" 
+        nextSlideElement.style.transform = "scale(1.11) translateY(3.9%)"
+        nextSlideElement.style.transition = "all 500ms  ease-in-out"         
       },1);
       
     },
