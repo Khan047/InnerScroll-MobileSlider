@@ -22,12 +22,12 @@ const ChefCards = () => {
 
  
   const settings = {
-    centerMode: false,
+    centerMode: true,
     centerPadding: '20px',
     slidesToShow: 1,
     slidesToScroll: 1, 
-    autoplay: true,
-    speed: 1000,
+    autoplay: false,
+    speed: 1300,
     mobileFirst: true,
     pauseOnHover: true,
     draggable: true ,
@@ -37,7 +37,8 @@ const ChefCards = () => {
     draggable: false,
     accessibility: false,
     arrows: false,
-    adaptiveHeight:false,
+    adaptiveHeight: false,
+    infinite:true,
     beforeChange : (prev, next) => {
       const prevSlideElement = slideRef.current.innerSlider.list.querySelector(`[data-index="${prev}"]`);
       const nextSlideElement = slideRef.current.innerSlider.list.querySelector(`[data-index="${next}"]`);
@@ -49,7 +50,7 @@ const ChefCards = () => {
       },1);
       
     },
- 
+  
  
   };
   
