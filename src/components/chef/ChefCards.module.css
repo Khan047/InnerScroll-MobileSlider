@@ -179,7 +179,8 @@ figure {
 .btn-chef-div {
 	position: absolute;
 	top: -11.5px;
-	width: 100%
+	width: 100%;
+	text-align: initial;
 }
 
 .btn-chef {
